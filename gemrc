@@ -1,0 +1,14 @@
+--- 
+open: -l
+:benchmark: false
+:bulk_threshold: 1000
+read: -l
+gem: --no-rdoc --no-ri
+install: --env-shebang
+:update_sources: true
+:backtrace: false
+:verbose: true
+:sources:
+- http://rubygems.org
+- http://gems.github.com
+update: --env-shebang

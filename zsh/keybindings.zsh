@@ -1,0 +1,11 @@
+bindkey '^K' kill-whole-line
+bindkey "^R" history-incremental-search-backward
+bindkey "^A" beginning-of-line
+bindkey "^E" end-of-line
+bindkey "^J" self-insert
+bindkey "^N" down-line-or-history
+bindkey "^P" up-line-or-history
+bindkey "^F" forward-char
+bindkey "^B" backward-char
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
