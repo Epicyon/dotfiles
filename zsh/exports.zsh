@@ -1,6 +1,5 @@
 export PATH=/usr/local/Cellar/Gems/1.8/bin:/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:$PATH
 export CDPATH=:~/source
-export RUBYOPT='rubygems -Itest'
 export EDITOR="vim"
 #export VISUAL="mvim --remote-tab-wait"
 #export GEM_OPEN_EDITOR="mvim"
