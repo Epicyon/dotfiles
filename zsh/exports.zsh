@@ -17,3 +17,6 @@ export PATH="$HOME/.gem/jruby/1.8/bin:$PATH"
 export PATH="/opt/mongo/bin:$PATH"
 
 export JAVA_HOME='/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home'
+
+export EC2_HOME="$(find /usr/local/Cellar/ec2-api-tools -name jars -print | head -n1)"
+export AWS_ELB_HOME="$(find /usr/local/Cellar/elb-tools -name jars -print | head -n1)"

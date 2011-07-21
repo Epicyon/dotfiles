@@ -12,15 +12,14 @@ alias rebase='git fetch; git rebase origin/master'
 alias extip='curl icanhazip.com'
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*|POST \/.*|PUT \/.*|DELETE \/.*\""
 
-alias gpom='git pull origin master'
-alias gpomr='git pull --rebase origin master'
-alias gpu='git push origin master'
-
 alias ls='ls -G'
 alias ll='ls -hl'
 
 alias gs='git status'
-
+alias gfo='git fetch origin'
+alias gpom='git pull origin master'
+alias gprom='git pull --rebase origin master'
+alias gpu='git push origin master'
 
 function gitdays {
   git log --author=Ken --reverse --since="$@ days ago" --pretty="format:%n%Cgreen%cd%n%n%s%n%b%n---------------------------------------------" 
