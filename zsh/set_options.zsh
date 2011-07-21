@@ -1,5 +1,5 @@
-setopt APPEND_HISTORY 
-setopt INC_APPEND_HISTORY 
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt complete_in_word         # Not just at the end

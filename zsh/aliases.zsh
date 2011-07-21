@@ -20,6 +20,8 @@ alias gfo='git fetch origin'
 alias gpom='git pull origin master'
 alias gprom='git pull --rebase origin master'
 alias gpu='git push origin master'
+alias gsh='git push origin'
+alias gllr='git pull --rebase origin'
 
 function gitdays {
   git log --author=Ken --reverse --since="$@ days ago" --pretty="format:%n%Cgreen%cd%n%n%s%n%b%n---------------------------------------------" 
