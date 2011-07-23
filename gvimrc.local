@@ -10,4 +10,4 @@ map <Leader>g :GundoToggle<CR>
 nnoremap <leader><leader> :noh<CR>
 
 "map to fuzzyfinder buffer"
-"nnoremap <C-b> :FufBuffer<cr>
+nnoremap <C-b> :FufBuffer<cr>
