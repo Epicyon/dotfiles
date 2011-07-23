@@ -3,7 +3,7 @@
 --type-add=js=.js.erb
 --type-add=css=.sass
 --type-set=cucumber=.feature
- 
+
 --ignore-dir=vendor
 --ignore-dir=log
 --ignore-dir=tmp
@@ -12,7 +12,7 @@
 --ignore-dir=fixtures
 --ignore-dir=script
 --ignore-dir=system
- 
+
 --sort-files
 --color
 --follow
