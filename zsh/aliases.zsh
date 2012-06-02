@@ -22,6 +22,7 @@ alias gprom='git pull --rebase origin master'
 alias gpu='git push origin master'
 alias gsh='git push origin'
 alias gllr='git pull --rebase origin'
+alias grm="git status | grep \"deleted:\" | awk '{print \$NF}' | xargs git rm"
 
 function gitdays {
   git log --author=Ken --reverse --since="$@ days ago" --pretty="format:%n%Cgreen%cd%n%n%s%n%b%n---------------------------------------------" 
