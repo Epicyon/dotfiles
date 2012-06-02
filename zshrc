@@ -16,3 +16,4 @@ if [[ -f ~/.zsh/private.zsh ]] ; then source ~/.zsh/private.zsh ; fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 rvm default
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
