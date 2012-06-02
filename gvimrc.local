@@ -11,3 +11,11 @@ nnoremap <leader><leader> :noh<CR>
 
 "map to fuzzyfinder buffer"
 nnoremap <C-b> :FufBuffer<cr>
+
+" Removes trailing spaces
+function TrimWhiteSpace()
+  %s/\s*$//
+  ''
+:endfunction
+
+map <C-n> :call TrimWhiteSpace()<CR>
