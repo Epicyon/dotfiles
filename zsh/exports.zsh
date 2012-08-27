@@ -7,5 +7,7 @@ export JAVA_HOME='/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Hom
 #export TERM=xterm-color
 export CLICOLOR=1
 
+export GOPATH=$HOME
+
 export EC2_HOME="$(find /usr/local/Cellar/ec2-api-tools -name jars -print | head -n1)"
 export AWS_ELB_HOME="$(find /usr/local/Cellar/elb-tools -name jars -print | head -n1)"
