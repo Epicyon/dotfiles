@@ -1,33 +1,57 @@
+[core]
+	excludesfile = $HOME/.gitignore
+
 [user]
 	name = Ken Robertson
 	email = ken@invalidlogic.com
-[color]
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
-[color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
-[color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
-[color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
-[merge]
-	tool = opendiff
-[core]
-	legacyheaders = false
-	quotepath = false
-[repack]
-	usedeltabaseoffset = true
+
+[credential]
+	helper = osxkeychain
+
 [alias]
 	ci = commit
 	co = checkout
 	st = status
 	ch = cherry -v origin
+	# remove local merged branches
+	clean-branches = !git branch --merged master | grep -v ' master' | xargs git branch -d
+	# show ancestors of the current HEAD in a topologically sorted graph
+	lg = log --graph --decorate --oneline
+	# show ancestors of all refs in a topologically sorted graph
+	lga = log --graph --decorate --oneline --all
+	# install the hub command line tool to make this work
+	pr = !hub pull-request
+
+[color]
+	ui = true
+
+[color "branch"]
+	current = magenta
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[help]
+	# automatically run a misspelled git command if there's only one suggestion
+	autocorrect = 1
+
+[merge]
+	tool = opendiff
+
+[push]
+	# help prevent push --force accidents
+	default = simple
+
+[url "git@github.com:"]
+		# prefer ssh to github over https
+		insteadOf = https://github.com/
