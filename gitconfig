@@ -1,5 +1,6 @@
 [core]
-	excludesfile = $HOME/.gitignore
+	excludesfile = /Users/ken/.gitignore
+	editor = subl -w
 
 [user]
 	name = Ken Robertson
@@ -53,5 +54,5 @@
 	default = simple
 
 [url "git@github.com:"]
-		# prefer ssh to github over https
-		insteadOf = https://github.com/
+	# prefer ssh to github over https
+	insteadOf = https://github.com/
