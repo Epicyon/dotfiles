@@ -56,3 +56,5 @@
 [url "git@github.com:"]
 	# prefer ssh to github over https
 	insteadOf = https://github.com/
+[rerere]
+	enabled = true
