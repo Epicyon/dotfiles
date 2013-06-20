@@ -23,7 +23,7 @@ set_term_tab() {
 }
 
 set_running_app() {
- printf "\e]1; $PWD:t:$(history $HISTCMD | cut -b7- ) \a"
+ echo -ne "\e]1; $PWD:t:$(history $HISTCMD | cut -b7- ) \a"
 }
 
 precmd() {
