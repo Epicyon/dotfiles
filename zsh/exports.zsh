@@ -9,3 +9,4 @@ export PATH=$GOPATH/bin:$PATH
 
 export EC2_HOME="$(find /usr/local/Cellar/ec2-api-tools -name jars -print | head -n1)"
 export AWS_ELB_HOME="$(find /usr/local/Cellar/elb-tools -name jars -print | head -n1)"
+export AWS_CLOUDFORMATION_HOME="$(find /usr/local/Cellar/aws-cfn-tools -name jars -print | head -n1)"
