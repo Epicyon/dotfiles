@@ -10,6 +10,7 @@ source ~/.zsh/history.zsh
 source ~/.zsh/set_options.zsh
 source ~/.zsh/completion.zsh
 source ~/.zsh/aliases.zsh
+source ~/.zsh/functions.zsh
 if [[ -f ~/.zsh/private.zsh ]] ; then source ~/.zsh/private.zsh ; fi
 
 eval "$(rbenv init -)"
